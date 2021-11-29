@@ -39,7 +39,7 @@ const Board = () => {
   };
 
   const addNewTask = (title, desc, listId) => {
-    console.log(title, desc, listId);
+    // console.log(title, desc, listId);
     const newTask = {
       id:uuidv4(),
       title:title,
@@ -58,11 +58,11 @@ const Board = () => {
 
   const handleDragEnd =({destination,source})=>{
     if(!destination){
-      console.log("dropped outside droppable space")
+      // console.log("dropped outside droppable space")
       return
     }
     if(destination.index===source.index && destination.droppableId===source.droppableId){
-      console.log("dropped in same space")
+      // console.log("dropped in same space")
       return
     }
 
