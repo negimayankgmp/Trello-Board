@@ -54,3 +54,8 @@ h1{
     background-color: aqua;
     width: 200px;
 }
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;
+}
