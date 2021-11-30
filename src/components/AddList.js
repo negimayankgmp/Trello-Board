@@ -8,7 +8,6 @@ const AddList = (props) => {
   const addList = (title)=>{
       props.addNewList(title)
       props.toggleAddingList()
-      setNewTitle('')
   }
 
 

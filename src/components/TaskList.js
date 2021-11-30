@@ -72,13 +72,14 @@ const TaskList = (props) => {
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
                       >
-                        <List.Item>
+                        <List.Item >
                             <Card title={item.title}
                               className="task-card" 
                               extra={<Button 
                               type="danger" 
                               shape="circle" 
                               size="small" 
+                              
                               onClick={()=>deleteCard(tasks.indexOf(item))}>
                               x
                               </Button>}>
